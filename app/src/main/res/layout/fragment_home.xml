@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E6E6"
+    tools:context=".Folder.HomeFolder.HomeFragment">
+
+    <TextView
+        android:id="@+id/Region_field"
+        android:layout_width="409dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/acme"
+        android:text="Moscow"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeatherDescription_field"
+        app:layout_constraintVertical_bias="0.093" />
+
+
+    <TextView
+        android:id="@+id/Temperature_field"
+        style="@style/Base.Widget.MaterialComponents.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="1°"
+        android:textColor="#000000"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toTopOf="@+id/WeatherDescription_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="159dp"
+        android:layout_height="104dp"
+        android:src="@drawable/ic_cloud_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/WeatherDescription_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <TextView
+        android:id="@+id/WeatherDescription_field"
+        android:layout_width="408dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/acme"
+        android:text="Sunny"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
